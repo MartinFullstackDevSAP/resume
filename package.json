@@ -1,12 +1,15 @@
 {
   "name": "web-cv",
+  "homepage": "https://https://martinfullstackdevsap.github.io/main",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "yarn run build",
+    "deploy": "gh-pages -d build" 
   },
   "dependencies": {
     "@apollo/server": "^4.10.2",
